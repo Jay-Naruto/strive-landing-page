@@ -43,7 +43,7 @@
   font-size: 15px;
     position: absolute;
     top: 90px;
-    z-index: 100;
+    z-index: 9999999;
     display: flex;
         background: linear-gradient(179deg, #5BB3EB -14.96%, #D467E2 117.48%);
 

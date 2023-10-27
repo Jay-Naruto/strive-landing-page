@@ -53,23 +53,10 @@
    transform: translate(-50%,-50%);
    z-index: 1;
 }
-  .spinner {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: absolute;
-    top: 15%;
-   z-index: 3;
+.spinnerImg{
+  width: 700px;
 
-
-  }
-  .spinner img{
-    width: 700px;
-
-  }
+}
 .landingbtn{
     height: 400px;
     width: auto;
@@ -162,20 +149,8 @@
        transform: translate(-50%,-50%);
        z-index: 1;
     }
-      .spinner {
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        position: absolute;
-        top: 32%;
-       z-index: 3;
-    
-    
-      }
-      .spinner img{
+
+      .spinnerImg{
         width: 80%;
     
       }
@@ -198,7 +173,8 @@
         flex-direction: column;
         text-transform: uppercase;
         position: relative;
-        bottom: 30px;
+        bottom: 0px;
+      
     
     }
     .landing_bottom1{

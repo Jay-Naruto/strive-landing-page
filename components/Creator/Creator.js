@@ -6,9 +6,10 @@ export default function Creator() {
   const isDesktopOrLaptop = useMediaQuery({
     query: '(max-width: 1000px)'
   })
-    const parallax = useParallax({
+
+      const parallaxMobile = useParallax({
       
-        translateX: isDesktopOrLaptop ? [20,0]:[100,-50],
+        translateY: isDesktopOrLaptop ?  [70,-60] : [50,-80],
       });
       const parallax1 = useParallax({
         translateX:[-100,0],
@@ -48,10 +49,13 @@ export default function Creator() {
         <div className={styles.creatorRight}>
             <div className={styles.creatorRightBox}>
             <img className={styles.ellipse} src='./Ellipse.png' alt=''/>
-            <div ref={parallax.ref} className={styles.parallaxPhone}>
-            <img className={styles.phone} src='./phone.png' alt=''/>
+            
+              <div ref={parallaxMobile.ref} className={styles.parallaxPhone}>
+              <img className={styles.phone} src='./phone.png' alt=''/>
+  
+              </div>
+         
 
-            </div>
 
             <div ref={parallax1.ref} className={styles.parallaxBtn1}>
             <img className={styles.creator_btn1} src='./creator-btn1.png' alt=''/>

@@ -1,8 +1,9 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import Landing from '@/components/Landing/Landing'
+const Landing = dynamic(() => import('@/components/Landing/Landing'), {
+  ssr: false,
+});
 import Creator from '@/components/Creator/Creator'
 import Features from '@/components/Features/Features'
 import Works from '@/components/Works/Works'
@@ -11,6 +12,7 @@ import Faq from '@/components/FAQ/Faq'
 import Faqs from '@/components/FAQ/Faq'
 import Footer from '@/components/Footer/Footer'
 import Header from '@/components/Header/Header'
+import dynamic from 'next/dynamic';
 
 const inter = Inter({ subsets: ['latin'] })
 
