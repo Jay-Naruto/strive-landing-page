@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:wght@700&display=swap');
+.container_body {
+    height: 100vh;
+    font-family: 'Exo', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+.wave{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    object-fit: cover;
+   z-index: -1;
+
+}
+.arrow{
+    width: 200px;
+    height: auto;
+    position: absolute; 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+   z-index: 3;
+
+}
+.create{
+
+
+    font-size: 260px;
+
+    background-color: red;
+
+    background-image: linear-gradient(179deg, #5BB3EB -14.96%, #D467E2 117.48%);
+
+    background-size: 100%;
+    background-repeat: repeat;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+
+      
+   font-weight: 900;
+   position: absolute; 
+   top: 50%;
+   left: 50%;
+
+   transform: translate(-50%,-50%);
+   z-index: 1;
+}
+  .spinner {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 15%;
+   z-index: 3;
+
+
+  }
+  .spinner img{
+    width: 700px;
+
+  }
+.landingbtn{
+    height: 400px;
+    width: auto;
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.landing_bottom{
+    margin-top: 0px;
+    width: 80%;
+    font-family: 'Tomorrow', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-direction: column;
+    text-transform: uppercase;
+    position: relative;
+    bottom: 60px;
+
+}
+.landing_bottom1{
+    color: white;
+  font-weight: 700;
+  font-size: 65px;
+}
+.landing_bottom2{
+    color: transparent;
+    text-shadow: 2px white;
+
+    -webkit-text-stroke: 2px white;
+  font-weight: 700;
+  font-size: 65px;
+
+}
+
+
+@media screen and (max-width:1000px) {
+    .container_body {
+        height: 100vh;
+        font-family: 'Exo', sans-serif;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+      }
+    .wave{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        object-fit: cover;
+       z-index: -1;
+    
+    }
+    .arrow{
+        width: 100px;
+        height: auto;
+        position: absolute; 
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+       z-index: 3;
+    
+    }
+    .create{
+    
+    
+        font-size: 80px;
+    
+        background-color: red;
+    
+        background-image: linear-gradient(179deg, #5BB3EB -14.96%, #D467E2 117.48%);
+    
+        background-size: 100%;
+        background-repeat: repeat;
+    
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+    
+          
+       font-weight: 900;
+       position: absolute; 
+       top: 50%;
+       left: 50%;
+    
+       transform: translate(-50%,-50%);
+       z-index: 1;
+    }
+      .spinner {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 32%;
+       z-index: 3;
+    
+    
+      }
+      .spinner img{
+        width: 80%;
+    
+      }
+    .landingbtn{
+        height: 200px;
+        width: auto;
+        position: absolute;
+        left: 46%;
+        top: 20%;
+        transform: translateY(-50%) rotate(90deg);
+        
+    }
+    .landing_bottom{
+        margin-top: 0px;
+        width: 80%;
+        font-family: 'Tomorrow', sans-serif;
+        display: flex;
+        justify-content: flex-start;
+        align-content: flex-start;
+        flex-direction: column;
+        text-transform: uppercase;
+        position: relative;
+        bottom: 30px;
+    
+    }
+    .landing_bottom1{
+        color: white;
+      font-weight: 700;
+      font-size: 40px;
+    }
+    .landing_bottom2{
+        color: transparent;
+        text-shadow: 2px white;
+    
+        -webkit-text-stroke: 2px white;
+      font-weight: 700;
+      font-size: 40px;
+    
+    }
+    
+}

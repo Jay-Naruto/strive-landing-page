@@ -1,0 +1,339 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:wght@300;700;500;600&display=swap');
+
+
+.works{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 0px;
+    position: relative;
+    flex-direction: column;
+    z-index: 1;
+    margin-bottom: 100px;
+}
+.bkg{
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.workInner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    flex-direction: column;
+    gap: 0px;
+    position: relative;
+}
+.workInnerTitle{
+    font-weight: 600;
+    font-size: 72px;
+    font-family: 'Tomorrow', sans-serif;
+color: white;
+}
+.parallaxLady{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parallaxLady img{
+    width: 700px;
+    height: auto;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    border: 2px solid #FFF;
+    margin: 20px;
+    backdrop-filter: blur(10px);
+   background: linear-gradient(0deg, rgba(95, 95, 95, 0), rgba(95, 95, 95, 0.29)),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    ;
+}
+.boxContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.boxContent{
+    font-family: 'Tomorrow', sans-serif;
+font-weight: 500;
+font-size: 22px;
+color: white;
+}
+
+.border {
+    position: absolute;
+
+    background-color: #323232; /* Set the desired border color */
+    width: 80%;
+    height: 3px;
+    top: -3px;
+    z-index: 1;
+  }
+  .border2 {
+    position: absolute;
+
+    background-color: #323232; /* Set the desired border color */
+    width: 80%;
+    height: 3px;
+    bottom: -3px;
+    z-index: 1;
+  }
+  .parallaxBox1{
+    position: absolute;
+    z-index: 100;
+  top: 40%;
+  left: 15%;
+  }
+  .box1{
+    width: 400px;
+
+
+  }
+  .parallaxBox2{
+    position: absolute;
+    z-index: 100;
+  top: 58%;
+  left: 12%;
+  }
+  .box2{
+    width: 400px;
+
+
+  }
+
+  .parallaxBox3{
+    position: absolute;
+    z-index: 100;
+  top:30%;
+  right: 20%;
+  }
+  .box3{
+    width: 400px;
+
+
+  }
+  .parallaxBox4{
+    position: absolute;
+    z-index: 100;
+  top:50%;
+  right: 26%;
+  }
+  .box4{
+    width: 200px;
+
+
+  }
+  .parallaxBox5{
+    position: absolute;
+    z-index: 100;
+  top:70%;
+  right: 8%;
+  }
+  .box5{
+    width: 450px;
+
+
+  }
+  .parallaxBox6{
+    position: absolute;
+    z-index: 100;
+  top:88%;
+  right: 25%;
+  }
+  .box6{
+    width: 450px;
+
+  }
+  .banner{
+    width: 80%;
+  }
+
+
+  @media screen and (max-width:1000px) {
+    
+.works{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 0px;
+    position: relative;
+    flex-direction: column;
+    z-index: 1;
+    margin-bottom: 100px;
+}
+.bkg{
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.workInner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    flex-direction: column;
+    gap: 0px;
+    position: relative;
+}
+.workInnerTitle{
+    font-weight: 600;
+    font-size: 40px;
+    font-family: 'Tomorrow', sans-serif;
+color: white;
+}
+.parallaxLady{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.parallaxLady img{
+    width: 100%;
+    height: auto;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    border: 2px solid #FFF;
+    margin: 5px;
+    backdrop-filter: blur(10px);
+   background: linear-gradient(0deg, rgba(95, 95, 95, 0), rgba(95, 95, 95, 0.29)),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    ;
+}
+.workInnerboxes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+    ;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    right: 15px;
+
+}
+.boxContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.boxContent{
+    font-family: 'Tomorrow', sans-serif;
+font-weight: 500;
+font-size: 15px;
+color: white;
+}
+
+.border {
+    position: absolute;
+
+    background-color: #323232; /* Set the desired border color */
+    width: 80%;
+    height: 3px;
+    top: -3px;
+    z-index: 1;
+  }
+  .border2 {
+    position: absolute;
+
+    background-color: #323232; /* Set the desired border color */
+    width: 80%;
+    height: 3px;
+    bottom: -3px;
+    z-index: 1;
+  }
+  .parallaxBox1{
+    position: relative;
+    z-index: 100;
+  top: 0%;
+  left: 0%;
+  width: 30%;
+
+  }
+  .box1{
+    width: 100%;
+
+
+  }
+  .parallaxBox2{
+    position: relative;
+    z-index: 100;
+  top: 0%;
+  left: 0%;
+  width: 60%;
+
+  }
+  .box2{
+    width:  100%;
+
+
+  }
+
+  .parallaxBox3{
+    position: relative;
+    z-index: 100;
+  top:0%;
+  right: 0%;
+  width: 50%;
+
+  }
+  .box3{
+    width: 100%;
+
+
+  }
+  .parallaxBox4{
+    position: relative;
+    z-index: 100;
+  top:0%;
+  right: 0%;
+  width: 40%;
+
+  }
+  .box4{
+    width: 100%;
+
+
+  }
+  .parallaxBox5{
+    position: relative;
+    z-index: 100;
+  top:0%;
+  right: 0%;
+  }
+  .box5{
+    width: 100%;
+
+
+  }
+  .parallaxBox6{
+    position: relative;
+    z-index: 100;
+  top:0%;
+  right: 0%;
+  }
+  .box6{
+    width: 100%;
+
+  }
+  .banner{
+    width: 100%;
+  }
+
+  }

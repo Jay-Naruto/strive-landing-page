@@ -1,0 +1,16 @@
+.dive{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 0px;
+    position: relative;
+    flex-direction: column;
+    z-index: 1;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}

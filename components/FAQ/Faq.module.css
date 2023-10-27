@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:wght@300;700&display=swap');
+
+
+.faq{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 200px 0;
+}
+.faqbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.faqboxLeft{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    font-family: 'Tomorrow', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    
+}
+.cubes{
+    position: absolute;
+    right: 0;
+    bottom: -100px;
+    width: 40%;
+    opacity: 0.5;
+    z-index: -1;
+}
+.faqboxLeft1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    font-family: 'Tomorrow', sans-serif;
+    font-weight: 300;
+    font-size: 72px;
+    
+}
+.faqboxLeft2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    font-family: 'Tomorrow', sans-serif;
+    font-weight: 600;
+    font-size: 72px;
+    
+}
+.faqboxRight{
+    width: 50%;
+}
+
+@media screen and (max-width:1000px) {
+    .faq{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin: 100px 0;
+    }
+    .faqbox{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .faqboxLeft{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Tomorrow', sans-serif;
+        color: white;
+        text-transform: uppercase;
+        position: relative;
+        
+    }
+    .cubes{
+        position: absolute;
+        right: 0;
+        bottom: -100px;
+        width: 40%;
+        opacity: 0.5;
+        z-index: -1;
+    }
+    .faqboxLeft1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Tomorrow', sans-serif;
+        font-weight: 300;
+        font-size: 40px;
+        
+    }
+    .faqboxLeft2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Tomorrow', sans-serif;
+        font-weight: 600;
+        font-size: 40px;
+        
+    }
+    .faqboxRight{
+        width: 100%;
+    }
+      
+}

@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:wght@300;700&display=swap');
+
+.creator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 300px;
+}
+.creatorBox{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 80%; position: relative;
+}
+.creatorLeft{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 45%;
+    
+}
+.creatorLeftText1{
+    color: white;
+  font-weight: 700;
+  font-family: 'Tomorrow', sans-serif;
+ text-transform: uppercase;
+  font-size: 65px;
+
+}
+.creatorLeftText2{
+    color: transparent;
+    text-shadow: 2px white;
+    font-family: 'Tomorrow', sans-serif;
+    text-transform: uppercase;
+
+    -webkit-text-stroke: 2px white;
+  font-weight: 700;
+  font-size: 65px;
+
+}
+.creatorLeftText3{
+    color: white;
+  font-weight: 300;
+  font-family: 'Tomorrow', sans-serif;
+margin-top: 30px;
+  font-size: 18px;
+
+}
+.creatorRight{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 80%;
+    position: relative;
+}
+.creatorRightBox{
+    position: relative;
+}
+
+.ellipse{
+    width: 100%;
+}
+.parallaxPhone{
+    position: absolute;
+    top: 0%;
+    width: 500px;
+}
+.parallaxPhone{
+  
+    width: 500px;
+}
+.parallaxBtn1{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.creator_btn1{
+    width: 300px;
+
+}
+.parallaxBtn2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.creator_btn2{
+    width: 300px;
+
+}
+.parallaxBtn3{
+    position: absolute;
+    bottom: -10%;
+    left: -10%;
+}
+.creator_logo{
+    width: 400px;
+
+}
+.parallaxBtn4{
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+   
+}
+.creator_btn4{
+    width: 300px;
+    cursor: pointer;
+
+}
+.logo{
+    width: 300px;
+    height: auto;
+    position: absolute;
+    right: 10%;
+    top: -20%;
+}
+
+@media screen and (max-width:1000px) {
+    .creator{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 100px;
+    }
+    .creatorBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 80%; position: relative;
+    }
+    .creatorLeft{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .creatorLeftText1{
+        color: white;
+      font-weight: 700;
+      font-family: 'Tomorrow', sans-serif;
+     text-transform: uppercase;
+      font-size: 40px;
+    
+    }
+    .creatorLeftText2{
+        color: transparent;
+        text-shadow: 2px white;
+        font-family: 'Tomorrow', sans-serif;
+        text-transform: uppercase;
+    
+        -webkit-text-stroke: 2px white;
+      font-weight: 700;
+      font-size: 40px;
+    
+    }
+    .creatorLeftText3{
+        color: white;
+      font-weight: 300;
+      font-family: 'Tomorrow', sans-serif;
+    margin-top: 30px;
+      font-size: 18px;
+    
+    }
+    .creatorRight{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+        margin-top: 50px;
+    }
+    .creatorRightBox{
+        position: relative;
+    }
+    
+    .ellipse{
+        width: 100%;
+    }
+    .parallaxPhone{
+        position: absolute;
+        top: 0%;
+        left: 0;
+        width: 100%;
+    }
+    .parallaxPhone img{
+      
+        width: 200px;
+    }
+
+    .parallaxBtn1{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .creator_btn1{
+        width: 200px;
+    
+    }
+    .parallaxBtn2{
+        position: absolute;
+        bottom: 10%;
+        right: 20%;
+    }
+    .creator_btn2{
+        width: 100px;
+    
+    }
+    .parallaxBtn3{
+        position: absolute;
+        bottom: -10%;
+        left: -10%;
+    }
+    .creator_logo{
+        width: 100%;
+    
+    }
+    .parallaxBtn4{
+        position: absolute;
+        top: 50px;
+        right: 0;
+       
+    }
+    .creator_btn4{
+        width: 200px;
+        cursor: pointer;
+    
+    }
+    .logo{
+        width: 200px;
+        height: auto;
+        position: absolute;
+        right: 10%;
+        top: -20%;
+    }  
+}
