@@ -57,7 +57,7 @@
 }
 .boxContent div{
     font-family: 'Tomorrow', sans-serif;
-font-weight: 300;
+font-weight: 300 !important;
 line-height: 35.52px;
 font-size: 30px;
 color: white;

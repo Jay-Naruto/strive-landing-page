@@ -21,6 +21,8 @@ height: max-content !important;
 margin: 10px 0 !important;
 font-family: 'Tomorrow', sans-serif;
 font-size: 18px;
+font-weight: 300 !important;
+
 }
 
 .row-title-text{
@@ -28,6 +30,7 @@ font-size: 18px;
     font-family: 'Tomorrow', sans-serif;
   font-size: 24px;
   margin: 10px !important;
+  font-weight: 300 !important;
 
 }
 .arrow-image{
