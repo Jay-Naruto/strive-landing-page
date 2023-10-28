@@ -6,6 +6,9 @@ export default function Features() {
             <div className={styles.featuresBox}>
                 <div className={styles.featurestitle}>
                     Features
+                    <div className={styles.featurestitlebkg}>
+                    Features
+                    </div>
                 </div>
             <div className={styles.featuresBoxr1}>
 

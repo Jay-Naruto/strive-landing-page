@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #171717;
+    background-color: rgb(23,23,23);
     margin-top: 0px;
 }
 .footerBox{
@@ -44,7 +44,7 @@ gap: 30px;
     color: white !important;
     text-decoration: underline;
     font-family: 'Red Hat Display', sans-serif;
-   font-size: 16px;
+   font-size: 18px;
    font-weight: 400;
    display: flex;
    justify-content: center;
@@ -57,10 +57,12 @@ gap: 30px;
 .input{
 background-color: transparent;
 border: 1px solid #FFFFFF61;
-padding: 10px 20px;
+padding: 15px 25px;
 color: #FFFFFF;
 width: 300px;
+border: 1px solid #FFFFFF61;
 margin-bottom: 20px;
+border-radius: 5px;
 }
 .footerBoxRight img{
     width: 200px;
@@ -91,7 +93,7 @@ flex-direction: row;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background-color: #151208;
+        background-color: rgb(23,23,23);
         margin-top: 70px;
     }
     .footerBox{
@@ -100,7 +102,7 @@ flex-direction: row;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: 20px;  
+        gap: 50px;  
         padding: 20px;
     }
     .footerBoxLeft{
@@ -146,7 +148,7 @@ flex-direction: row;
         flex-direction: column;
     }
     .footerBoxRight img{
-        width: 50%;
+        width: 200px;
     }
     
     .foot{
@@ -164,8 +166,8 @@ flex-direction: row;
         border: 1px solid #FFFFFF61;
         padding: 10px 20px;
         color: #FFFFFF;
-        width: 100%;
-        margin-bottom: 20px;
+        width: 200px;
+        margin-bottom: 50px;
         }
 }
 

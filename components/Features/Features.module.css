@@ -43,9 +43,13 @@
     margin: 20px;
     position: relative;
     z-index: 100;
-   background: linear-gradient(0deg, rgba(95, 95, 95, 0), rgba(95, 95, 95, 0.29)),
+   /* background: linear-gradient(0deg, rgba(95, 95, 95, 0), rgba(95, 95, 95, 0.29)),
     linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
-    ;
+    ; */
+    background-image: url(../../public/cardbkg.png);
+    background-size: cover;
+
+    transition: width 0.5s;
  
 }
 
@@ -108,7 +112,7 @@ color: white;
     flex-direction: column;
 }
 .box4 img{
-    height: 200px;
+    height: 250px;
 }
 .featurestitle{
     font-weight: 600;
@@ -120,22 +124,46 @@ color: white;
     align-items: flex-start;
     width: 80%;
     text-transform: uppercase;
+    /* text-shadow: 2px 2px 4px #fff; */
+    position: relative;
+    z-index: 10;
+
+}
+.featurestitlebkg{
+    font-weight: 600;
+    font-size: 72px;
+    font-family: 'Tomorrow', sans-serif;
+    color: #00060F;
+    display: flex;
+    text-shadow: white;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 80%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #ffffff67;
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    z-index: -1;
 }
 
-.box1{
+.box1 img{
     animation-name: floating;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+
 }
- 
+.box:hover {
+    width: 100%; /* Set the width to 100% on hover */
+  }
 @keyframes floating {
     0% { transform: translate(0,  0px); }
     50%  { transform: translate(0, 15px); }
     100%   { transform: translate(0, -0px); }    
 }
 
-.box2{
+.box2 img{
     animation-name: floating2;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -148,7 +176,7 @@ color: white;
     100%   { transform: translate(0, -0px); }    
 }
 
-.box3{
+.box3 img{
     animation-name: floating3;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -160,7 +188,7 @@ color: white;
     50%  { transform: translate(0, 30px); }
     100%   { transform: translate(0, -0px); }    
 }
-.box4{
+.box4 img{
     animation-name: floating4;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -177,8 +205,9 @@ color: white;
     bottom: -150px;
     width: 20%;
     z-index: 10;
-    opacity: 0.5;
+    opacity: 0.3;
 }
+
 
 @media screen and (max-width:1000px) {
     .features{
@@ -225,9 +254,11 @@ color: white;
         margin: 20px 0;
         position: relative;
         z-index: 100;
-       background: linear-gradient(0deg, rgba(95, 95, 95, 0), rgba(95, 95, 95, 0.29)),
-        linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
-        ;
+   /* background: linear-gradient(0deg, rgba(95, 95, 95, 0), rgba(95, 95, 95, 0.29)),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    ; */
+    background-image: url(../../public/cardbkg.png);
+    background-size: cover;
      
     }
     
@@ -298,6 +329,9 @@ color: white;
     .box4 img{
         height: 100px;
     }
+    .box:hover {
+        width:85%; /* Set the width to 100% on hover */
+      }
     .featurestitle{
         font-weight: 600;
         font-size: 40px;
@@ -309,57 +343,24 @@ color: white;
         width: 100%;
         text-transform: uppercase;
     }
-    
-    .box1{
-        animation-name: floating;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-    }
-     
-    @keyframes floating {
-        0% { transform: translate(0,  0px); }
-        50%  { transform: translate(0, 15px); }
-        100%   { transform: translate(0, -0px); }    
-    }
-    
-    .box2{
-        animation-name: floating2;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-    }
-     
-    @keyframes floating2 {
-        0% { transform: translate(0,  0px); }
-        50%  { transform: translate(0, 10px); }
-        100%   { transform: translate(0, -0px); }    
+    .featurestitlebkg{
+        font-weight: 600;
+        font-size: 40px;
+        font-family: 'Tomorrow', sans-serif;
+        color: #00060F;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 1px #ffffff67;
+        position: absolute;
+        left: 10px;
+        top: 8px;
+        z-index: -1;
     }
     
-    .box3{
-        animation-name: floating3;
-        animation-duration: 5s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-    }
-     
-    @keyframes floating3 {
-        0% { transform: translate(0,  0px); }
-        50%  { transform: translate(0, 30px); }
-        100%   { transform: translate(0, -0px); }    
-    }
-    .box4{
-        animation-name: floating4;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-    }
-     
-    @keyframes floating4 {
-        0% { transform: translate(0,  0px); }
-        50%  { transform: translate(0, 15px); }
-        100%   { transform: translate(0, -0px); }    
-    }
+
     .cubes{
         position: absolute;
         bottom: -100px;

@@ -11,12 +11,16 @@
   }
 .wave{
     position: absolute;
-    width: 100%;
+    width: 100vw;
     top: 0;
     object-fit: cover;
    z-index: -1;
 
 }
+.transitionText {
+  transition: opacity 0.5s ease-in;
+}
+
 .arrow{
     width: 200px;
     height: auto;
@@ -52,22 +56,31 @@
 
    transform: translate(-50%,-50%);
    z-index: 1;
+
+}
+.spinner{
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%,-50%);
+  z-index: 3;
 }
 .spinnerImg{
   width: 700px;
 
 }
 .landingbtn{
-    height: 400px;
+    height: 300px;
     width: auto;
-    position: absolute;
+    position: fixed;
     left: 50px;
     top: 50%;
     transform: translateY(-50%);
 }
 .landing_bottom{
     margin-top: 0px;
-    width: 80%;
+    width: 100%;
     font-family: 'Tomorrow', sans-serif;
     display: flex;
     justify-content: flex-start;
@@ -75,7 +88,8 @@
     flex-direction: column;
     text-transform: uppercase;
     position: relative;
-    bottom: 60px;
+    bottom: 20px;
+    left: -15%;
 
 }
 .landing_bottom1{
@@ -126,7 +140,7 @@
     .create{
     
     
-        font-size: 80px;
+        font-size: 90px;
     
         background-color: red;
     
@@ -150,6 +164,15 @@
        z-index: 1;
     }
 
+    .spinner{
+      position: absolute; 
+      top: 50%;
+      left: 50%;
+    
+      transform: translate(-50%,-50%);
+      z-index: 3;
+      width: 100%;
+    }
       .spinnerImg{
         width: 80%;
     
@@ -193,3 +216,6 @@
     }
     
 }
+
+
+

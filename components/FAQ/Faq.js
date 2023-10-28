@@ -1,27 +1,34 @@
 import React from 'react'
 import Faq from 'react-faq-component';
 import styles from "./Faq.module.css"
+import Faq2 from '../Faq2'
+
 export default function Faqs() {
-    const data = {
-    
-        rows: [
-          {
-            title: "Lorem ipsum dolor sit amet,",
-            content: "Lorem ipsum dolor sit amet, consectetur "
-          },
-          {
-            title: "Nunc maximus, magna at ultricies elementum",
-            content: "Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam."
-          },
-          {
-            title: "Curabitur laoreet, mauris vel blandit fringilla",
-            content: "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc"
-          },
-          {
-            title: "What is the package version",
-            content: "v1.0.5"
-          }]
+  const data = {
+    rows: [
+      {
+        label: "Q1", // Add labels here
+        title: "Lorem ipsum dolor sit amet,",
+        content: "Lorem ipsum dolor sit amet, consectetur "
+      },
+      {
+        label: "Q2", // Add labels here
+        title: "Nunc maximus, magna at ultricies elementum",
+        content: "Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam."
+      },
+      {
+        label: "Q3", // Add labels here
+        title: "Curabitur laoreet, mauris vel blandit fringilla",
+        content: "Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc"
+      },
+      {
+        label: "Q4", // Add labels here
+        title: "What is the package version",
+        content: "v1.0.5"
       }
+    ]
+  };
+  
   return (
     <div id='FAQ' className={styles.faq}>
         <div className={styles.faqbox}>
@@ -37,7 +44,7 @@ export default function Faqs() {
 
             </div>
             <div  className={styles.faqboxRight}>
-            <Faq data={data}/>
+            <Faq2 data={data}/>
             </div>
 
         </div>

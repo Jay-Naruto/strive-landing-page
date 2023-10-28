@@ -5,11 +5,15 @@ body{
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+   
 }
 html{
     overflow-x: hidden;
 
 }
+html {
+    scroll-behavior: smooth;
+  }
 .faq-row-wrapper{
     background-color: transparent !important;
 }
@@ -56,9 +60,12 @@ ul li{
     margin-bottom: 20px;
     cursor: pointer;
     color: white !important;
+    text-decoration: none;
+
   }
   a{
     color: white;
+    text-decoration: none;
   }
 
   @media screen and (max-width:1000px) {
@@ -82,6 +89,13 @@ ul li{
       margin: 10px !important;
     
     }
+    .row-title-text::before {
+        content: "Q"; /* You can specify the labels you want */
+        font-family: 'Tomorrow', sans-serif;
+
+        font-weight: bold;
+        margin-right: 5px;
+      }
     .arrow-image{
         color:  white !important;
         fill:  white !important;
@@ -99,5 +113,111 @@ ul li{
         color: white !important;
         cursor: pointer;
         align-items: center;
+    }
+  }
+
+.absolute{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    
+}
+
+.transition1{
+   margin-top: 1600px;
+
+}
+.transition {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s;
+  }
+  
+  .transition.visible {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+.bkg {
+    transition: opacity 0.7s ease-out; /* Add the transition property for opacity */
+    opacity: 1; /* Start with opacity set to 1 */
+  }
+  
+  /* Apply opacity to .bkg when 'fixed' class is present */
+  .bkg.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999999;
+  }
+  
+  /* Apply opacity to .bkg when 'relative' class is present */
+  .bkg.relative {
+    position: relative;
+    opacity: 0;
+  }
+  
+.chakra-accordion__item button{
+    font-family: 'Tomorrow', sans-serif;
+
+    background-color: #00060F !important;
+    border: none ;
+    border-bottom: 1px solid #FFFFFF38 !important;
+}
+.chakra-accordion__panel {
+    background-color: #10151C !important;
+    padding: 10px !important;
+    font-family: 'Tomorrow', sans-serif;
+   margin: 5px 0;
+    ;
+}
+.boldQ{
+    font-weight: 500 !important;
+    font-size: 25px;
+}
+.boldText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 300 !important;
+    font-size: 22px;
+    padding-left: 5px;
+}
+
+/* .transition {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .transition.visible {
+    visibility: visible;
+    opacity: 1;
+  } */
+/* Add transition for opacity */
+.transition-text {
+    transition: opacity 0.5s;
+    opacity: 1;
+  }
+  .transition-text.hidden {
+    opacity: 0;
+  }
+  
+  @media screen and (max-width:1000px) {
+    .boldQ{
+        font-weight: 500 !important;
+        font-size: 20px;
+    }
+    .boldText{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        font-weight: 300 !important;
+        font-size: 18px;
+        padding-left: 5px;
     }
   }
