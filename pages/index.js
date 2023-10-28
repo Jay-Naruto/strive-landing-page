@@ -33,7 +33,6 @@ export default function Home() {
     };
   }, []);
 const thr=2000
-console.log(scrollPosition)
 
 useEffect(() => {
   const bkgElements = document.querySelectorAll('.bkg');
