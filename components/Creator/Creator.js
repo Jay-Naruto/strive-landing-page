@@ -56,6 +56,7 @@ export default function Creator() {
  
               <img
               data-aos="fade-up"
+              data-aos-delay="300"
               data-aos-anchor-placement="center-bottom"
               className={styles.phone} src='./phone.png' alt=''/>
 

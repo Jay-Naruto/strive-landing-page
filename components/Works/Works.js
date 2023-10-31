@@ -34,8 +34,9 @@ export default function Works() {
           isDesktopOrLaptop ?
           (
     <div
-    data-aos="fade-up"
-     data-aos-anchor-placement="center-bottom"
+    data-aos="fade-left"
+    data-aos-delay="300"
+
     style={{display:'flex',justifyContent:'center',alignItems:'center',width:'100%',position:'relative'}} > 
                      <img className={styles.mobile_works} src='./work-mobile.png' alt=''/>
                   <div className={styles.lady} >
