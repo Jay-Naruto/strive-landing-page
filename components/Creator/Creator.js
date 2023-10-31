@@ -2,8 +2,7 @@ import React from 'react'
 import styles from "./Creator.module.css"
 import { useParallax } from 'react-scroll-parallax';
 import { useMediaQuery } from 'react-responsive';
-import "animate.css/animate.min.css";
-import ScrollAnimation from 'react-animate-on-scroll';
+import { motion } from "framer-motion";
 
 export default function Creator() {
   const isDesktopOrLaptop = useMediaQuery({
@@ -54,54 +53,52 @@ export default function Creator() {
             <img className={styles.ellipse} src='./Ellipse.png' alt=''/>
             
               <div  className={styles.parallaxPhone}>
-              <ScrollAnimation animateIn="animate__fadeInUp">
-              <img className={styles.phone} src='./phone.png' alt=''/>
+ 
+              <img
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom"
+              className={styles.phone} src='./phone.png' alt=''/>
 
-
-                  </ScrollAnimation>
   
               </div>
          
 
 
             <div  className={styles.parallaxBtn1}>
-            <ScrollAnimation animateIn="animate__fadeInLeft">
-            <img className={styles.creator_btn1} src='./creator-btn1.png' alt=''/>
+            <img
+    
+            className={styles.creator_btn1} src='./creator-btn1.png' alt=''/>
 
-
-
-                  </ScrollAnimation>
 
             </div>
 
             <div  className={styles.parallaxBtn2}>
-            <ScrollAnimation animateIn="animate__fadeInRight">
-            <img className={styles.creator_btn2} src='./creator-btn2.png' alt=''/>
 
+            <img
+         data-aos="fade-left"
+         data-aos-offset="800"
+            className={styles.creator_btn2} src='./creator-btn2.png' alt=''/>
 
-
-                  </ScrollAnimation>
 
             </div>
 
             <div  className={styles.parallaxBtn3}>
-            <ScrollAnimation animateIn="animate__fadeInRight">
-            <img className={styles.creator_logo} src='./creator-logo.png' alt=''/>
+            <img
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            className={styles.creator_logo} src='./creator-logo.png' alt=''/>
 
-
-
-
-                  </ScrollAnimation>
 
             </div>
 
 
             </div>
             <div  className={styles.parallaxBtn4}>
-            <ScrollAnimation animateIn="animate__fadeInBottomRight">
-            <img className={styles.creator_btn4} src='./creator-btn3.png' alt=''/>
 
-                  </ScrollAnimation>
+            <img
+        
+            className={styles.creator_btn4} src='./creator-btn3.png' alt=''/>
+
 
             </div>
 
