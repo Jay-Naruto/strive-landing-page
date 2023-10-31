@@ -4,6 +4,8 @@ import styles from '@/styles/Home.module.css'
 const Landing = dynamic(() => import('@/components/Landing/Landing'), {
   ssr: false,
 });
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Creator from '@/components/Creator/Creator'
 import Features from '@/components/Features/Features'
 import Works from '@/components/Works/Works'
@@ -55,7 +57,9 @@ useEffect(() => {
     }
   });
 }, [scrollPosition]);
-
+useEffect(() => {
+  AOS.init();
+}, [])
 
   return (
     <>
@@ -64,11 +68,11 @@ useEffect(() => {
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="./logo.png" />
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"></link>
+        {/* <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"></link>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
           AOS.init();
-        </script>
+        </script> */}
       </Head>
       <div className={ scrollPosition < thr ? 'absolute' : 'relative' }>
       <div className='bkg' style={{ position: scrollPosition < thr ? 'fixed' : 'relative', top:0,width:'100%',zIndex:999999999}}>
