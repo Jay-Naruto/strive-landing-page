@@ -2,26 +2,29 @@ import React from 'react'
 import styles from "./Creator.module.css"
 import { useParallax } from 'react-scroll-parallax';
 import { useMediaQuery } from 'react-responsive';
+import "animate.css/animate.min.css";
+import ScrollAnimation from 'react-animate-on-scroll';
+
 export default function Creator() {
   const isDesktopOrLaptop = useMediaQuery({
     query: '(max-width: 1000px)'
   })
 
-      const parallaxMobile = useParallax({
+      // const parallaxMobile = useParallax({
       
-        translateY: isDesktopOrLaptop ?  [70,-60] : [50,-80],
-      });
-      const parallax1 = useParallax({
-        translateX:[-100,0],
-        easing: [1, -0.75, 0.5, 1.34],
-      });
-      const parallax2 = useParallax({
-        translateX:[0,100],
-      });
-      const parallax3 = useParallax({
+      //   translateY: isDesktopOrLaptop ?  [70,-60] : [50,-80],
+      // });
+      // const parallax1 = useParallax({
+      //   translateX:[-100,0],
+      //   easing: [1, -0.75, 0.5, 1.34],
+      // });
+      // const parallax2 = useParallax({
+      //   translateX:[0,100],
+      // });
+      // const parallax3 = useParallax({
 
-        scale: [0.5, 1],
-      });
+      //   scale: [0.5, 1],
+      // });
     //   const parallax4 = useParallax({
     //     translateX:[0,300],
 
@@ -50,32 +53,55 @@ export default function Creator() {
             <div className={styles.creatorRightBox}>
             <img className={styles.ellipse} src='./Ellipse.png' alt=''/>
             
-              <div ref={parallaxMobile.ref} className={styles.parallaxPhone}>
+              <div  className={styles.parallaxPhone}>
+              <ScrollAnimation animateIn="animate__fadeInUp">
               <img className={styles.phone} src='./phone.png' alt=''/>
+
+
+                  </ScrollAnimation>
   
               </div>
          
 
 
-            <div ref={parallax1.ref} className={styles.parallaxBtn1}>
+            <div  className={styles.parallaxBtn1}>
+            <ScrollAnimation animateIn="animate__fadeInLeft">
             <img className={styles.creator_btn1} src='./creator-btn1.png' alt=''/>
 
+
+
+                  </ScrollAnimation>
+
             </div>
 
-            <div ref={parallax2.ref} className={styles.parallaxBtn2}>
+            <div  className={styles.parallaxBtn2}>
+            <ScrollAnimation animateIn="animate__fadeInRight">
             <img className={styles.creator_btn2} src='./creator-btn2.png' alt=''/>
 
+
+
+                  </ScrollAnimation>
+
             </div>
 
-            <div ref={parallax3.ref} className={styles.parallaxBtn3}>
+            <div  className={styles.parallaxBtn3}>
+            <ScrollAnimation animateIn="animate__fadeInRight">
             <img className={styles.creator_logo} src='./creator-logo.png' alt=''/>
+
+
+
+
+                  </ScrollAnimation>
 
             </div>
 
 
             </div>
             <div  className={styles.parallaxBtn4}>
+            <ScrollAnimation animateIn="animate__fadeInBottomRight">
             <img className={styles.creator_btn4} src='./creator-btn3.png' alt=''/>
+
+                  </ScrollAnimation>
 
             </div>
 

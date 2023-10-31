@@ -22,8 +22,8 @@
 }
 
 .arrow{
-    width: 200px;
-    height: auto;
+ 
+    height: 20vh;
     position: absolute; 
     left: 50%;
     top: 45%;
@@ -67,7 +67,7 @@
   z-index: 3;
 }
 .spinnerImg{
-  width: 700px;
+  height:60vh;
 
 }
 .landingbtn{
@@ -95,7 +95,9 @@
 .landing_bottom1{
     color: white;
   font-weight: 700;
-  font-size: 65px;
+  font-size: 60px;
+  position: relative;
+  z-index: 10000000000;
 }
 .landing_bottom2{
     color: transparent;
@@ -103,7 +105,9 @@
 
     -webkit-text-stroke: 2px white;
   font-weight: 700;
-  font-size: 65px;
+  font-size: 60px;
+  position: relative;
+  z-index: 10000000000;
 
 }
 
@@ -128,8 +132,7 @@
     
     }
     .arrow{
-        width: 100px;
-        height: auto;
+        height: 10vh;
         position: absolute; 
 
        z-index: 3;
@@ -166,7 +169,7 @@
       width: 100%;
     }
       .spinnerImg{
-        width: 80%;
+        height: 30vh;
     
       }
     .landingbtn{

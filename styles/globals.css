@@ -126,7 +126,7 @@ ul li{
 }
 
 .transition1{
-   margin-top: 1600px;
+   margin-top: 1900px;
 
 }
 .transition {
@@ -221,3 +221,12 @@ ul li{
         padding-left: 5px;
     }
   }
+  .boldText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    font-weight: 300 !important;
+    font-size: 22px;
+    padding-left: 5px;
+}

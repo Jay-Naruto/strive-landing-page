@@ -9,7 +9,7 @@
     margin-top: 0px;
 }
 .footerBox{
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -26,6 +26,7 @@ font-weight: 400;
 font-size: 16px;
 color: #898CA9;
 gap: 30px;
+width: 70%;
 }
 .footerBoxLeftLogo{
     width: 200px;
@@ -107,14 +108,15 @@ flex-direction: row;
     }
     .footerBoxLeft{
         display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
         font-family: 'Red Hat Display', sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: #898CA9;
     gap: 30px;
+    width: 100%;
     }
     .footerBoxLeftLogo{
         width: 200px;
