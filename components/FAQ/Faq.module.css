@@ -131,6 +131,7 @@
         color: white;
         text-transform: uppercase;
         position: relative;
+        width: 100%;
         
     }
     .cubes{
@@ -148,7 +149,8 @@
         flex-direction: column;
         font-family: 'Tomorrow', sans-serif;
         font-weight: 300;
-        font-size: 40px;
+        font-size: 30px;
+        width: 100%;
         
     }
     .faqboxLeft2{
@@ -158,7 +160,8 @@
         flex-direction: column;
         font-family: 'Tomorrow', sans-serif;
         font-weight: 600;
-        font-size: 40px;
+        font-size: 30px;
+        width: 100%;
         
     }
     .faqboxRight{

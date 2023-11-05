@@ -242,16 +242,16 @@ ul li{
   }
 }
 .carousel_img{
-  height:24vw !important;
+  /* height:24vw !important;
   margin:50px !important;
-  backdrop-filter: blur(20px) !important;
+  backdrop-filter: blur(20px) !important; */
 }
 .react-multiple-carousel__arrow{
   background-color: #000;
   }
   .carousel{
     width: 65vw !important;
-    height: 30vw !important;
+    height: 40vw !important;
 
 
   }
@@ -260,6 +260,12 @@ ul li{
 .react-multi-carousel-list{
   width: 65vw !important;
 
+}
+.react-multi-carousel-item{
+  height:30vw !important;
+  width: auto !important;
+  margin:10px !important;
+  backdrop-filter: blur(20px) !important;
 }
   @media screen and (max-width:1000px) {
     .carousel_img{

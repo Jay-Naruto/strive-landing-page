@@ -108,14 +108,14 @@ export default function Creator() {
 
 
             </div>
-            {/* <div  className={styles.parallaxBtn4}>
+            <div  className={styles.parallaxBtn4}>
 
             <img
         
             className={styles.creator_btn4} src='./creator-btn3.png' alt=''/>
 
 
-            </div> */}
+            </div>
 
 
 

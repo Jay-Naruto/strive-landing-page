@@ -2,8 +2,12 @@ import React from 'react'
 import Faq from 'react-faq-component';
 import styles from "./Faq.module.css"
 import Faq2 from '../Faq2'
+import { useMediaQuery } from 'react-responsive';
 
-export default function Faqs() {
+export default function Faqs() {    
+  const isDesktopOrLaptop = useMediaQuery({
+  query: '(max-width: 1000px)'
+})
   const data = {
     rows: [
       {
@@ -36,7 +40,17 @@ export default function Faqs() {
         <img className={styles.cubes} src='./cubes.png' alt=''/>
 
                 <div  className={styles.faqboxLeft1}>
-                Frequently<br></br>Asked 
+                  {
+                    isDesktopOrLaptop ?
+<>
+Frequently Asked 
+
+</>
+:
+<>
+Frequently<br></br>Asked 
+</>
+                  }
                 </div>
                 <div  className={styles.faqboxLeft2}>
                 Questions
