@@ -300,3 +300,7 @@ ul li{
 
     
   }
+  .chakra-icon {
+    fill: white !important;
+    color: white !important;
+  }

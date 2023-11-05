@@ -244,7 +244,7 @@ color: white;
 }
 
 .box1 {
-    animation: expandAnimation 6s ease-in-out 0s infinite;
+    animation: expandAnimation 5s ease-in-out 0s infinite;
   }
   
   .box1:hover {
@@ -252,7 +252,7 @@ color: white;
   }
   
   .box2 {
-    animation: expandAnimation 8s ease-in-out 0s infinite;
+    animation: expandAnimation 4s ease-in-out 0s infinite;
   }
   
   .box2:hover {
@@ -260,7 +260,7 @@ color: white;
   }
   
   .box3 {
-    animation: expandAnimation 8s ease-in-out 0s infinite;
+    animation: expandAnimation 5s ease-in-out 0s infinite;
   }
   
   .box3:hover {
@@ -268,7 +268,7 @@ color: white;
   }
   
   .box4 {
-    animation: expandAnimation2 6s ease-in-out 0s infinite;
+    animation: expandAnimation2 4s ease-in-out 0s infinite;
   }
   
   .box4:hover {
