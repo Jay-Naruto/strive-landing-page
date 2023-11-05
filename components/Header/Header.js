@@ -23,7 +23,7 @@ export default function Header() {
                     (
                         <div className={styles.right}>
                     <img className={styles.headerbtn} src='./btn.png' alt=''/>
-                    <img onClick={()=>{setOpen(1)}}  src='./menu.png' alt=''/>
+                    <img className={styles.menubtn} onClick={()=>{setOpen(1)}}  src='./menu.png' alt=''/>
 
                         </div>
                     )

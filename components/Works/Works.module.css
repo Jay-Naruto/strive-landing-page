@@ -17,9 +17,8 @@
     linear-gradient(rgba(0, 6, 15, 0.9), transparent) top,
     linear-gradient(transparent, rgba(0, 6, 15, 0.9)) bottom,
     url(../../public/workbkg.png);
-  /* Adjust the opacity and other values as needed */
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-size: 100% 10%, 100% 10%, cover;
+  background-size: 100% 70%, 100% 50%, cover;
   background-position: center top, center bottom, center center;
     padding: 100px 0 100px 0;
 }
@@ -31,10 +30,10 @@
 }
 .workInner{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
     width: 90%;
-    flex-direction: column;
+    flex-direction: row;
     gap: 0px;
     position: relative;
 }
@@ -43,6 +42,7 @@
     font-size: 72px;
     font-family: 'Tomorrow', sans-serif;
 color: white;
+width: 30%;
 }
 .parallaxLady{
     display: flex;
@@ -196,6 +196,10 @@ color: white;
     font-size: 40px;
     font-family: 'Tomorrow', sans-serif;
 color: white;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 .parallaxLady{
     display: flex;
@@ -225,9 +229,11 @@ color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     position: relative;
-    width: 100%;
+    width: 70%;
+
+    
 
 }
 .boxContent{
@@ -377,4 +383,15 @@ color: white;
   width: 100%;
   z-index: 1;
 }
+.workInnerboxes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  
+
+}
   }
+

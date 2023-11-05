@@ -125,10 +125,20 @@ ul li{
     
 }
 
+
 .transition1{
    margin-top: 1800px;
 
 }
+.transition {
+  opacity: 0; /* Initially, hide the components */
+  transition: opacity 0.5s ease; /* Apply a smooth transition to the opacity property */
+}
+
+.visible {
+  opacity: 1; /* When the component becomes visible, change the opacity to 1 */
+}
+
 .transition {
     visibility: hidden;
     opacity: 0;
@@ -206,21 +216,7 @@ ul li{
     opacity: 0;
   }
   
-  @media screen and (max-width:1000px) {
-    .boldQ{
-        font-weight: 500 !important;
-        font-size: 20px;
-    }
-    .boldText{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: left;
-        font-weight: 300 !important;
-        font-size: 18px;
-        padding-left: 5px;
-    }
-  }
+
   .boldText{
     display: flex;
     justify-content: center;
@@ -230,3 +226,55 @@ ul li{
     font-size: 22px;
     padding-left: 5px;
 }
+@media screen and (max-width:1000px) {
+  .boldQ{
+      font-weight: 500 !important;
+      font-size: 20px;
+  }
+  .boldText{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+      font-weight: 300 !important;
+      font-size: 15px;
+      padding-left: 5px;
+  }
+}
+.carousel_img{
+  height:24vw !important;
+  margin:50px !important;
+  backdrop-filter: blur(20px) !important;
+}
+.react-multiple-carousel__arrow{
+  background-color: #000;
+  }
+  .carousel{
+    width: 65vw !important;
+    height: 30vw !important;
+
+
+  }
+
+
+
+  @media screen and (max-width:1000px) {
+    .carousel_img{
+      height: auto !important;
+      width: 100% !important;
+
+      margin:0px !important;
+      backdrop-filter: blur(20px) !important;
+    }
+      .carousel{
+        width: 90% !important;
+        height: 500px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   
+    
+    
+      }
+    
+  }

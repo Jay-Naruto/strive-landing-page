@@ -10,6 +10,10 @@ export default function Landing({scrollPosition}) {
 
 
     //   });
+    
+
+
+
     const [isFirstAnimationComplete, setIsFirstAnimationComplete] = useState(false);
 
     const handleFirstAnimationComplete = () => {

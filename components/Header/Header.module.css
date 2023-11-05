@@ -71,8 +71,7 @@
     font-family: 'Red Hat Display', sans-serif;
   font-weight: 600;
   font-size: 15px;
-    position: absolute;
-    top: 90px;
+
     z-index: 100;
     display: flex;
         background: linear-gradient(179deg, #5BB3EB -14.96%, #D467E2 117.48%);
@@ -88,18 +87,13 @@
     /* height: max-content; */
     gap: 20px;
     animation: slideIn 0.5s forwards; /* Apply the slide-in animation */
-    right: 0px;
+    position: absolute;
+    top: 90px;
+    right: 20px ;
     color: white !important;
+    width: 50%;
 }
 
-@keyframes slideIn {
-  from {
-    left: -100%; /* Start off-screen to the left */
-  }
-  to {
-    left: 0; /* Slide in to the center of the screen */
-  }
-}
 
 /* Define a class to trigger the slide-out animation */
 .menubox.slide-out {
@@ -117,5 +111,10 @@
 }
 .headerbtn{
   width: 100px;
+}
+.menubtn{
+  width: 30px;
+  cursor: pointer;
+  z-index: 100;
 }
 }

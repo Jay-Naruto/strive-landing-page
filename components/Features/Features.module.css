@@ -389,12 +389,16 @@ color: white;
       .box1{
         width: 80%;
       }
+      .box1 img{
+        width: 150px;
+
+      }
     .box2{
         padding: 20px;
         width: 80%;
     }
     .box2 img{
-        width: 100px;
+        width: 150px;
     }
     .box3{
         width: 80%;
@@ -402,7 +406,7 @@ color: white;
         padding:  20px;
     }
     .box3 img{
-        width: 100px;
+        width: 150px;
     }
     .box4{
         width: 80%;
@@ -417,7 +421,8 @@ color: white;
         flex-direction: row;
     }
     .box4 img{
-        height: 100px;
+        width: 150px;
+        height: auto;
     }
     .box:hover {
         width:85%; /* Set the width to 100% on hover */
@@ -488,5 +493,28 @@ color: white;
       
       .box4:hover {
         animation-play-state: paused;
+      }
+      .box2 .boxContent{
+        display: flex;
+        flex-direction: row-reverse ;
+      }
+      .box3 .boxContent{
+        display: flex;
+        flex-direction:column ;
+      }
+
+      .div1{
+       width: 100%;
+       display: flex;
+        justify-content: flex-start;
+      }
+      .div2{
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+       }
+      .box4 .boxContent{
+        display: flex;
+        flex-direction:column-reverse ;
       }
 }

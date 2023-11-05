@@ -33,6 +33,19 @@ export default function Creator() {
   return (
     <div id='speakers' className={styles.creator}>
         <div  className={styles.creatorBox}>
+
+
+        {isDesktopOrLaptop &&
+         <div  className={styles.parallaxBtn4}>
+
+         <img
+         
+                 className={styles.creator_btn4} src='./creator-btn3.png' alt=''/>
+         
+         
+                 </div>
+}
+
         <img className={styles.logo} src='./bkg-logo.png' alt=''/>
 
         <div className={styles.creatorLeft}>
@@ -48,6 +61,7 @@ export default function Creator() {
             </div>
 
         </div>
+        
         <div className={styles.creatorRight}>
             <div className={styles.creatorRightBox}>
             <img className={styles.ellipse} src='./Ellipse.png' alt=''/>
@@ -77,7 +91,7 @@ export default function Creator() {
 
             <img
          data-aos="fade-left"
-         data-aos-offset="800"
+     
             className={styles.creator_btn2} src='./creator-btn2.png' alt=''/>
 
 
@@ -94,18 +108,23 @@ export default function Creator() {
 
 
             </div>
-            <div  className={styles.parallaxBtn4}>
+            {/* <div  className={styles.parallaxBtn4}>
 
             <img
         
             className={styles.creator_btn4} src='./creator-btn3.png' alt=''/>
 
 
-            </div>
+            </div> */}
 
 
 
         </div>
+
+
+
+ 
+
         </div>
 
     </div>

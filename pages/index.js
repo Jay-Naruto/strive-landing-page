@@ -8,7 +8,9 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Creator from '@/components/Creator/Creator'
 import Features from '@/components/Features/Features'
-import Works from '@/components/Works/Works'
+const Works = dynamic(() => import('@/components/Works/Works'), {
+  ssr: false,
+});
 import Dive from '@/components/Dive/Dive'
 import Faqs from '@/components/FAQ/Faq'
 import Faq2 from '../components/Faq2'
@@ -57,6 +59,8 @@ useEffect(() => {
     }
   });
 }, [scrollPosition]);
+
+
 useEffect(() => {
   AOS.init();
 }, [])
@@ -73,12 +77,13 @@ useEffect(() => {
         <script>
           AOS.init();
         </script> */}
+        
       </Head>
       <div className={ scrollPosition < thr ? 'absolute' : 'relative' }>
       <div className='bkg' style={{ position: scrollPosition < thr ? 'fixed' : 'relative', top:0,width:'100%',zIndex:999999999}}>
       <Header  />
       </div>
-      <div  className='bkg' style={{ position: scrollPosition < thr ? 'fixed' : 'relative'}}>
+      <div   style={{ position: scrollPosition < thr ? 'fixed' : 'relative'}}>
       <Landing scrollPosition={scrollPosition}  />
       </div>
       </div>
