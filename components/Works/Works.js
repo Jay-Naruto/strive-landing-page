@@ -4,6 +4,7 @@ import { useParallax } from 'react-scroll-parallax';
 import { useMediaQuery } from 'react-responsive';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import SimpleImageSlider from "react-simple-image-slider";
 export default function Works() {
     const isDesktopOrLaptop = useMediaQuery({
         query: '(max-width: 1000px)'
@@ -27,6 +28,15 @@ export default function Works() {
           items: 1,
         },
       };
+      const images = [
+        { url: "./hw1.png" },
+        { url: "./hw1.png" },
+        { url: "./hw1.png" },
+        { url: "./hw1.png" },
+        { url: "./hw1.png" },
+        { url: "./hw1.png" },
+        { url: "./hw1.png" },
+      ];
   return (
     <div id='works' className={styles.works} >
 
@@ -35,59 +45,76 @@ export default function Works() {
                 HOW IT WORKS
             </div>
             <div  className={styles.workInnerboxes}>
-            <Carousel
-           className='carousel'
-          swipeable={true}
-          draggable={false}
-          responsive={responsive}
-          ssr={true} // means to render carousel on server-side.
-          infinite={true}
-          autoPlaySpeed={4000}
-          autoPlay={true}
-        >
-          <img
-            className="carousel_img"
-            src="./hw1.png"
-            alt=""
-            draggable={false}
-          />
-          <img
-            className="carousel_img"
-            src="./hw1.png"
-            alt=""
-            draggable={false}
-          />
-          <img
-            className="carousel_img"
-            src="./hw1.png"
-            alt=""
-            draggable={false}
-          />
-          <img
-            className="carousel_img"
-            src="./hw1.png"
-            alt=""
-            draggable={false}
-          />
-          <img
-            className="carousel_img"
-            src="./hw1.png"
-            alt=""
-            draggable={false}
-          />
-          <img
-            className="carousel_img"
-            src="./hw1.png"
-            alt=""
-            draggable={false}
-          />
-          <img
-            className="carousel_img"
-            src="./hw1.png"
-            alt=""
-            draggable={false}
-          />
-        </Carousel>
+              {
+                isDesktopOrLaptop ?
+
+                <SimpleImageSlider
+                width='100%'
+                height={400}
+                images={images}
+                showBullets={false}
+                showNavs={true}
+                autoPlay={true}
+                slideDuration={2}
+              />
+              :
+              <Carousel
+              className='carousel'
+             swipeable={true}
+             draggable={false}
+             responsive={responsive}
+             ssr={true} 
+             infinite={true}
+             autoPlaySpeed={4000}
+             autoPlay={true}
+           >
+             <img
+               className="carousel_img"
+               src="./hw1.png"
+               alt=""
+               draggable={false}
+             />
+             <img
+               className="carousel_img"
+               src="./hw1.png"
+               alt=""
+               draggable={false}
+             />
+             <img
+               className="carousel_img"
+               src="./hw1.png"
+               alt=""
+               draggable={false}
+             />
+             <img
+               className="carousel_img"
+               src="./hw1.png"
+               alt=""
+               draggable={false}
+             />
+             <img
+               className="carousel_img"
+               src="./hw1.png"
+               alt=""
+               draggable={false}
+             />
+             <img
+               className="carousel_img"
+               src="./hw1.png"
+               alt=""
+               draggable={false}
+             />
+    <img
+               className="carousel_img"
+               src="./hw1.png"
+               alt=""
+               draggable={false}
+             />
+             
+             
+           </Carousel>
+              }
+
              
 
 
